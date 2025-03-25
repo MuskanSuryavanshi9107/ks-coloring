@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>KS Coloring</title>
+    <link rel="stylesheet" href="./../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+       <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">PRODUCT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+       </section>
+
+       <!----------about us content------->
+       <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+              <h1>Color Your World with KS Coloring.</h1>
+              <p>At KS Coloring, we bring your spaces to life with vibrant, high-quality paints. Whether you're revamping a room or transforming your entire home, our expert team and premium products ensure a flawless finish. Let’s add color to your world!</p>
+              <a href="" class="hero-btn blue-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+            <img src="./../static/image/About us.jpg">
+           </div>
+        </div>
+       </section>
+
+
+
+<!--------Footer--------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>At KS Coloring, we bring creativity to life with inspiring designs and vibrant colors.<br>Our mission is to make every space beautiful with quality paints and personalized solutions.<br>Transform your home with KS Coloring – where colors tell your story.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Colors Edition</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------javaScript for toggle Menu-------->
+   <script>
+
+       var navLinks = document.getElementById("navLinks");
+
+       function showMenu(){
+          navLinks.style.right = "0";
+       }
+       function hideMenu(){
+          navLinks.style.right = "-200px"
+       }
+
+   </script> 
+</body>
+</html>
