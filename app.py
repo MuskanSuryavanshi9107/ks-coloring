@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request, session
+from flask import Flask, render_template, redirect, url_for, request, session , dashboard
 import sqlite3
 
 app = Flask(__name__)
@@ -89,3 +89,10 @@ def login():
 def logout():
     session.pop("user", None)
     return redirect(url_for("hello"))
+
+@app.route('/dashboard')
+def dashboard():
+    if 'user_id' not in session:
+        return redirect(url_for('login'))
+
+    return f"Welcome, User {session['user_id']}! This is your dashboard."
